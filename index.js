@@ -5,6 +5,7 @@ const inputBtn = document.querySelector("#input-btn")
 const ulEl = document.querySelector("#ul-el")
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
+
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
     renderLeads()
