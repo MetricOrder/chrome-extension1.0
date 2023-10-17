@@ -7,6 +7,8 @@ const deleteBtn = document.querySelector("#delete-btn")
 const ulEl = document.querySelector("#ul-el")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
+const tabs = [{url: "https://www.youtube.com"}] // temporary "tab template"
+
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
     render(myLeads)
@@ -20,6 +22,9 @@ inputBtn.addEventListener("click", function(){
 })
 
 tabBtn.addEventListener("click", function(){
+    myLeads.push(tabs[0].url)
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    render(myLeads)
 
 })
 
