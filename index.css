@@ -10,23 +10,25 @@ input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: solid #5f9341 1px;
+    border: solid #3655AC 1px;
+    border-radius: 10px;
     
 }
 
 button {
     margin-top: 5px;
     padding: 10px 20px;
-    background-color: #5f9341;
+    background-color: #3655AC;
     color: white;
-    border: 1px solid #5f9341;
+    border: 1px solid #3655AC;
     font-weight: bold;
+    border-radius: 10px;
     
 }
 
 #delete-btn {
     background-color: white;
-    color: #5f9341;
+    color: #3655AC;
 
 }
 
@@ -41,5 +43,5 @@ li {
 }
 
 a {
-    color: #5f9341;
+    color: #3655AC;
 }
